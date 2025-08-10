@@ -1,0 +1,38 @@
+:root{
+  --maroon: #7b2030;
+  --yellow:#ffd23f;
+  --muted:#673131;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{
+  font-family: Arial, sans-serif;
+  margin:0; color:#333; background:#fff;
+}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+.site-header{background:var(--maroon);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;object-fit:contain}
+.school-name{font-weight:600;letter-spacing:1px}
+.main-nav a, .dropbtn{color:#fff;text-decoration:none;margin-left:12px;padding:8px 10px;border-radius:3px}
+.main-nav a.active{background:rgba(0,0,0,0.45)}
+.dropdown{position:relative;display:inline-block}
+.dropdown-content{display:none;position:absolute;right:0;background:#fff;color:#222;min-width:180px;box-shadow:0 2px 8px rgba(0,0,0,0.15);z-index:10;border-radius:4px;overflow:hidden}
+.dropdown-content a{display:block;padding:10px 12px;color:#222;text-decoration:none;border-bottom:1px solid #eee}
+.dropdown-content a.must{font-weight:700;color:var(--maroon)}
+.dropdown:hover .dropdown-content{display:block}
+.hero{padding:70px 0 80px;text-align:center}
+.hero.small{padding:30px 0}
+.hero h1{font-size:48px;margin:0;font-weight:700;color:#fff}
+.accent-line{height:6px;width:60%;max-width:700px;margin:22px auto;background:var(--yellow)}
+.main-content{padding:36px 0}
+.cards{display:flex;gap:18px;margin-top:18px;flex-wrap:wrap}
+.card{flex:1 1 280px;background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.04);text-decoration:none;color:inherit}
+.material-list{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+.mat-card{display:inline-block;padding:18px 22px;background:var(--muted);border-radius:8px;text-decoration:none;color:inherit;box-shadow:0 4px 12px rgba(0,0,0,0.04)}
+.site-footer{background:#fff;padding:18px 0;border-top:1px solid #eee;margin-top:48px;text-align:center;color:#666}
+form{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#uploadsList{margin-top:12px}
+.upload-item{background:#fafafa;border:1px solid #eee;padding:8px;border-radius:6px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.note{font-size:0.9rem;color:#666;margin-top:8px}
